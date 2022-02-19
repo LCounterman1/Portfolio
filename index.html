@@ -7,92 +7,105 @@
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
-<body>
-    <div class="top">
-        <header>
-            <hi>Leslie</hi>
-            <nav id="navlinks">
-                <!--About/Contact Us Links-->
-                <ul>
-                    <li><button onclick="Home">Home</button></li>
-                    <li><button onclick="AboutMe">About Me</button></li>
-                    <li><button onclick="Projects">Projects</button></li>
-                    <li><button onclick="Contact">Contact</button></li>
-                </ul>
-            </nav>
-        </header>
+<body style="text-align: center;">
+
+    
+        <div class="nav">
+            <div class = "popup" onclick = "myFunction()">About
+                <div class = "popuptext" id="aboutPopup">
+                    <img class="picture" src="assets/Picture.jpg" height="300" width="180"> 
+                    <div class ="scroll">
+                        Hello World.<br>My name is Leslie Counterman.<br>
+                        I enjoy spending time with my family and all of our animals.
+                        If you are looking for a dedicated, hard working, truthful and dependable individual that
+                        takes pride in their work, let's chat!  
+                    </div>
+                </div>
+            </div>
+        </div>
+            <script>
+                function myFunction() {
+                    var about = document.getElementById("aboutPopup");
+                    about.classList.toggle("show");
+                }
+            </script>
+        <div class="nav">
+            <div class = "popup" onclick = "myFunction2()">Skills
+                <div class = "popuptext" id="skillsPopup"><br> My technical skill set includes <br> 
+                    <ul>
+                        <li>HTML/CSS</li> 
+                        <li>C# coding</li>
+                        <li>Visual Studio</li>
+                        <li>Visual Community</li> 
+                        <li>Azure</li>
+                        <li>Sql</li>
+                    </ul>
+                </div>      
+            </div>
+        </div>
+            <script>
+                function myFunction2() {
+                    var skills = document.getElementById("skillsPopup");
+                    skills.classList.toggle("show");
+                }
+            </script> 
+        <div class="nav">
+            <div class = "popup" onclick = "myFunction3()">Projects
+                <div class = "popuptext" id="projectPopup"> 
+                        <img class="creature" src="assets/CSS.JPG"
+                        width="180" height="180">
+                        <a href="https://lcounterman1.github.io/SweetNSmoothie/"><img class="smoothie" src="assets/smoothie.JPG" 
+                        width="180" height="180"></a>
+                        <img class="console" src="assets/PairedProgramming.JPG"
+                        width="180" height="180">
+                        
+
+                </div>
+            </div>
+        </div>
+            <script>
+                function myFunction3() {
+                    var projects = document.getElementById("projectPopup");
+                    projects.classList.toggle("show");
+                }
+            </script> 
+        <div class="nav">
+            <div class = "popup" onclick = "myFunction4()">Contact
+                <div class = "popuptext" id="contactPopup">
+                    <h4 class= "h4">Contact Now</h4>
+                        <form>
+                            <p class= "p"><input type="text name" placeholder="Your Name" /></p>
+                            <p class= "p"><input type="text email" placeholder="Your Email" /></p>
+                            <p class= "p"><input type="message" placeholder="Type Message Here" /></p>
+                            <p><button class="Send">Send Message</button></p>
+                            <p><button class="Close">Close</button></p>
+                        </form>
+                    </div>
+            </div>
+        </div>
+            <script>
+                function myFunction4(){
+                    var contact = document.getElementById("contactPopup");
+                    contact.classList.toggle("show");
+                }
+            </script>
         <div class="home">
             <!--Home-->
-            <p class="name">string name = "Leslie Counterman"</p>
-            <p class="developer">softwareDeveloper</p>
+            <p class="name">Leslie Counterman</p>
         </div>
-    </div>
-    <section class ="middle">
-    <div>
-                    <!--Picture-->
-                    <img class="picture" src="assets/Picture.jpg"
-                    width="180" height="260">
-                    <button>Resume</button>
-                    <button>References</button>
-                    <button class="contactNow">ContactForm</button>
-                <div class="aboutme">
-                    <!--About Me Detail-->
-                    <p>Hello World.</p>
-                    <p>I am Leslie Counterman.</p>
-                    <p>Before signing up for classes with Eleven Fifty, I had no idea what I wanted to do with 
-                        my life. I had spent a majority of my career working in manufacturing management for an
-                        aerosol factory.But now after my time with ElevenFifty Academy, I know that I want a long 
-                        term career in a software developer position.</p>
-                    <p>My technical skill set includes HTML/CSS, C# coding, Visual Studio, Visual Community, 
-                        Azure, Sql</p>
-                    <p>If you are looking for a dedicated, hard working, truthful and dependable individual that
-                        takes pride in their work, or just need someone to help you walk through a probelm,  
-                        contact me on Slack, LinkedIn, or Email for further information.</p>        
-            </div>
-            </div>
-            </section>
-
-            <div class="MyWork">
-                <section class="projects">
-                    <div>
-                        <!--Css Creature-->
-                        <img class="creature" src="assets/CSS.JPG"
-                        width="300" height="300"></button>
-                    </div>
-                    <div>
-                        <!--Fruit N' Smoothie-->
-                        <img class="smoothie" src="assets/smoothie.JPG"
-                        width="300" height="300"></button>
-                    </div>
-                    <div>
-                        <!--Console App-->
-                        <img class="console" src="assets/PairedProgramming.JPG"
-                        width="300" height="300"></button>
-                    </div>
-                </section>
-            </div>
+        <div class="contactLinks">
+        <a href="https://www.linkedin.com/in/leslie-counterman-aa172722a/"><img class="linkedin" src="assets/linkedin.png"
+        width="40" height="40"></a>
+        <a href="https://github.com/LCounterman1"><img class="github" src ="assets/github.png"
+        width="40" height="40"></a>
         </div>
-        <div class="bottom">
-            <footer>
-                <div class="footer">
-                    <!--Contact Me Links-->
-                    <nav class="follow">
-                        <div>
-                            <img class="slack" src="assets/slack.png"
-                            width="40" height="40">
-                            <img class="linkedin" src="assets/linkedin.png"
-                            width="40" height="40">
-                            <img class="gmail" src="assets/gmail.png"
-                            width="40" height="40">
-                        </div>
-                        <div>
-                            <button>Back To Top</button>
-                        </div>
-                    </nav>
-                </div>
-            </footer>
-        </div>
-    </div>
     
 </body>
 </html>
+
+
+//mobile friendly?
+//bootstrap needs added
+//form to email needs work
+//live interaction
+//tidying up about, skills, projects, contact form
